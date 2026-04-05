@@ -82,4 +82,19 @@ layout {
       }
     }
   }
+ tab name="notes" {
+    pane split_direction="vertical" {
+      pane {
+        cwd "~/dev/personal/notes/"
+      }
+      pane split_direction="horizontal" {
+        pane {
+          cwd "~/dev/personal/notes/"
+          command "zsh"
+          args "-c" " source ~/.zshrc && claude"
+          start_suspended true
+        }
+      }
+    }
+  }
 }
