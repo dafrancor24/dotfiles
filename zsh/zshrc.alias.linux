@@ -30,7 +30,7 @@ alias ytw='yarn test:watch'
 
 # pnpm
 alias pd='pnpm dev'
-alias pi='pnpm install'
+alias pni='pnpm install'
 alias pt='pnpm tsc'
 alias pf='pnpm format'
 
