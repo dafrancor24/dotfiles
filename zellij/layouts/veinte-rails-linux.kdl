@@ -18,10 +18,10 @@ layout {
   tab name="app" {
     pane split_direction="vertical" {
       pane {
-        cwd "~/dev/veinte/app"
+        cwd "~/dev/veinte/monorepo/app"
       }
       pane {
-        cwd "~/dev/veinte/app"
+        cwd "~/dev/veinte/monorepo/app"
         command "zsh"
         args "-c" "source ~/.zshrc && pnpm dev"
         start_suspended true
@@ -31,17 +31,17 @@ layout {
   tab name="api" {
     pane split_direction="vertical" {
       pane {
-        cwd "~/dev/veinte/api"
+        cwd "~/dev/veinte/monorepo/api"
       }
       pane split_direction="horizontal" {
         pane {
-          cwd "~/dev/veinte/api"
+          cwd "~/dev/veinte/monorepo/api"
           command "zsh"
           args "-c" " source ~/.zshrc && bundle exec sidekiq"
           start_suspended true
         }
         pane {
-          cwd "~/dev/veinte/api"
+          cwd "~/dev/veinte/monorepo/api"
           command "zsh"
           args "-c" "source ~/.zshrc && bundle exec rails s"
           start_suspended true
@@ -52,14 +52,14 @@ layout {
   tab name="claude" {
     pane split_direction="vertical" {
       pane {
-          cwd "~/dev/veinte/app"
+          cwd "~/dev/veinte/monorepo/app"
           command "zsh"
           args "-c" "source ~/.zshrc && claude"
           start_suspended true
         }
       pane split_direction="horizontal" {
         pane {
-          cwd "~/dev/veinte/api"
+          cwd "~/dev/veinte/monorepo/api"
           command "zsh"
           args "-c" "source ~/.zshrc && claude"
           start_suspended true
@@ -70,11 +70,11 @@ layout {
   tab name="deploy" {
     pane split_direction="vertical" {
       pane {
-        cwd "~/dev/veinte/api"
+        cwd "~/dev/veinte/monorepo/api"
       }
       pane split_direction="horizontal" {
         pane {
-          cwd "~/dev/veinte/api"
+          cwd "~/dev/veinte/monorepo/api"
           command "zsh"
           args "-c" " source ~/.zshrc && watch kubectl get pods -n production"
           start_suspended true
