@@ -12,3 +12,6 @@ fi
 
 # Load aliases
 source "$CONFIG_PATH/zsh/zshrc.alias"
+
+# opencode
+export PATH=$HOME/.opencode/bin:$PATH

@@ -27,7 +27,7 @@
   },
   "vsicons.dontShowNewVersionMessage": true,
   "window.commandCenter": true,
-  "workbench.colorTheme": "Tokyo Hack",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.iconTheme": "vscode-icons",
   "workbench.sideBar.location": "right",
   "extensions.ignoreRecommendations": true

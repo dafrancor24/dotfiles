@@ -50,20 +50,12 @@ layout {
     }
   }
   tab name="claude" {
-    pane split_direction="vertical" {
+    pane {
       pane {
-          cwd "~/dev/veinte/monorepo/app"
-          command "zsh"
-          args "-c" "source ~/.zshrc && claude"
-          start_suspended true
-        }
-      pane split_direction="horizontal" {
-        pane {
-          cwd "~/dev/veinte/monorepo/api"
-          command "zsh"
-          args "-c" "source ~/.zshrc && claude"
-          start_suspended true
-        }
+        cwd "~/dev/veinte/monorepo"
+        command "zsh"
+        args "-c" "source ~/.zshrc && herdr"
+        start_suspended true
       }
     }
   }
